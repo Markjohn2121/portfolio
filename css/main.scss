@@ -104,7 +104,7 @@
         
         // PROFILE SECTION
         .profile {
-            height: 100vh;
+            height: auto;
             position: -webkit-sticky;
             position: sticky;
             display: flex;
@@ -121,10 +121,11 @@
                     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
                 }
                 h1 {
+                    font-size: 5em;
                     letter-spacing: .2em;
                     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
                     span {
-                        color: red;
+                        color: rgb(138, 120, 120);
                     }
                 }
                 ul {
@@ -448,6 +449,9 @@
         // MEDIA QUERY
         // BIG SCREEN
         @media (min-width:575px) {
+            .profile {
+                height: auto;
+            }
             #menu-option {
                 display: block;
             }

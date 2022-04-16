@@ -70,7 +70,7 @@ html {
 }
 
 .profile {
-  height: 100vh;
+  height: auto;
   position: -webkit-sticky;
   position: sticky;
   display: -webkit-box;
@@ -97,12 +97,13 @@ html {
 }
 
 .profile .profile-content1 h1 {
+  font-size: 5em;
   letter-spacing: .2em;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .profile .profile-content1 h1 span {
-  color: red;
+  color: #8a7878;
 }
 
 .profile .profile-content1 ul {
@@ -499,6 +500,9 @@ html {
 }
 
 @media (min-width: 575px) {
+  .profile {
+    height: auto;
+  }
   #menu-option {
     display: block;
   }
