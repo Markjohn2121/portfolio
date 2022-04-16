@@ -398,16 +398,21 @@
                     padding-bottom: 2em;
                     background-color: rgba(0, 255, 255, 0.185);
                     border-radius: 2em;
+                    border: 1px solid;
                     input {
                         width: 10em;
                         margin-left: auto;
                         margin-right: auto;
                         text-align: center;
+                        border: 2px solid;
+                        border-radius: 2em;
                     }
                     textarea {
                         display: block;
                         width: 11em;
                         resize: none;
+                        border: 1px solid;
+                        border-radius: .4em;
                     }
                     label {
                         display: block;
@@ -418,6 +423,7 @@
                         height: 2em;
                         border-style: hidden;
                         border-radius: 1em;
+                        border: 1px solid;
                     }
                     // CONTACT ME
                     .contact-me {
