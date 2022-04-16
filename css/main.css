@@ -92,7 +92,8 @@ html {
 }
 
 .profile .profile-content1 p {
-  margin-bottom: -1em;
+  font-size: 2em;
+  margin-bottom: -2em;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -503,6 +504,14 @@ html {
   .profile {
     height: auto;
   }
+  .profile .profile-content2 {
+    width: 70%;
+    height: 32em;
+  }
+  .profile .profile-content2 .profile-pic {
+    width: 90%;
+    height: 29em;
+  }
   #menu-option {
     display: block;
   }
@@ -599,6 +608,19 @@ html {
 }
 
 @media (max-width: 575px) {
+  .profile .profile-content1 h1 {
+    font-size: 4em;
+    margin-left: .2em;
+    margin-right: .2em;
+  }
+  .profile .profile-content2 {
+    width: 100%;
+    height: auto;
+  }
+  .profile .profile-content2 .profile-pic {
+    width: 90%;
+    height: 50%;
+  }
   .nav-bar {
     position: relative;
     float: right;
@@ -709,7 +731,7 @@ html {
   margin-right: 8%;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 750px) {
   .profile {
     height: auto;
     display: -webkit-box;
@@ -725,6 +747,13 @@ html {
     background-color: rgba(0, 0, 255, 0.26);
     margin-bottom: 5em;
     padding-bottom: 2em;
+  }
+  .profile .profile-content2 {
+    width: 50%;
+  }
+  .profile .profile-content2 .profile-pic {
+    width: 90%;
+    height: 20em;
   }
   .profile .profile-content1 {
     margin-left: auto;
@@ -775,10 +804,11 @@ html {
     height: 2.7em;
   }
   .profile .profile-content2 {
-    width: 50%;
+    width: 100%;
+    height: 90em;
     background-color: rgba(0, 0, 0, 0);
     background-color: rgba(0, 0, 255, 0.37);
-    width: 50%;
+    width: 70%;
     height: auto;
     border-radius: 20em;
     padding-bottom: 1em;
@@ -794,8 +824,8 @@ html {
     margin-left: auto;
     margin-right: auto;
     display: block;
-    width: 50%;
-    height: 100%;
+    width: 80%;
+    height: 25em;
   }
   .swiper {
     width: 50%;
@@ -833,7 +863,21 @@ html {
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 900px) {
+  .profile .profile-content1 p {
+    font-size: 4em;
+  }
+  .profile .profile-content1 h1 {
+    font-size: 7em;
+  }
+  .profile .profile-content2 {
+    width: 50%;
+    height: auto;
+  }
+  .profile .profile-content2 .profile-pic {
+    width: 70%;
+    height: auto;
+  }
   .nav-bar {
     display: -webkit-box;
     display: -ms-flexbox;
