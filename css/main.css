@@ -103,7 +103,7 @@ html {
 }
 
 .profile .profile-content1 h1 span {
-  color: #8a7878;
+  color: #da1919;
 }
 
 .profile .profile-content1 ul {
@@ -212,8 +212,8 @@ html {
 }
 
 #aboutme .education .self-intro {
-  width: 90%;
-  height: auto;
+  width: 80%;
+  height: 40em;
 }
 
 #skill {
@@ -711,7 +711,7 @@ html {
 
 @media (min-width: 800px) {
   .profile {
-    height: 100vh;
+    height: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -775,7 +775,6 @@ html {
     height: 2.7em;
   }
   .profile .profile-content2 {
-    position: relative;
     width: 50%;
     background-color: rgba(0, 0, 0, 0);
     background-color: rgba(0, 0, 255, 0.37);
@@ -786,7 +785,7 @@ html {
     margin-left: auto;
     margin-right: auto;
     margin-right: 1em;
-    margin-top: auto;
+    margin-top: 7em;
     margin-bottom: auto;
   }
   .profile .profile-content2 .profile-pic {
@@ -870,6 +869,10 @@ html {
   }
   .acounts {
     display: none;
+  }
+  .education video {
+    width: auto;
+    height: 50vh;
   }
 }
 

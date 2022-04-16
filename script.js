@@ -1,49 +1,48 @@
-
 const menubtn = document.getElementById('menu-image');
 const navb = document.getElementById('menu-option');
 const exitbtn = document.getElementById('exitbtn');
 
-if(window.innerWidth <= 575){
-menubtn.addEventListener('click', () => {
-  // navb.classList.toggle('active');
-  //  menubtn.style.display = "none";
-navb.style.display = "block";
-  
-});
-exitbtn.addEventListener('click', () => {
-    //navb.classList.toggle('active');
-navb.style.display = "none";
-});
+if (window.innerWidth <= 575) {
+    menubtn.addEventListener('click', () => {
+        // navb.classList.toggle('active');
+        //  menubtn.style.display = "none";
+        navb.style.display = "block";
 
-document.body.addEventListener('pointermove' ,()=>{
-  
-  if(window.innerWidth > 575){
-    
-   navb.style.display = "block";
-   
-    //navb.classList.toggle('active');
-  }else{
-   navb.style.display = "none";
-  }
+    });
+    exitbtn.addEventListener('click', () => {
+        //navb.classList.toggle('active');
+        navb.style.display = "none";
+    });
 
+    navb.addEventListener('mouseleave', () => {
 
+        if (window.innerWidth > 575) {
 
-});
+            navb.style.display = "block";
+
+            //navb.classList.toggle('active');
+        } else {
+            navb.style.display = "none";
+        }
 
 
-}else if(window.innerWidth > 575){
+
+    });
+
+
+} else if (window.innerWidth > 575) {
     navb.style.display = "block";
-  
+
 }
 
 
-window.onresize =()=>{
-  if(window.innerWidth > 575){
-    navb.style.display = "block";
-  }else{
-    navb.style.display = "none";
-  }
- 
+window.onresize = () => {
+    if (window.innerWidth > 575) {
+        navb.style.display = "block";
+    } else {
+        navb.style.display = "none";
+    }
+
 }
 
 
