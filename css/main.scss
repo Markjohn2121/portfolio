@@ -225,7 +225,7 @@
                     }
                     .self-intro {
                         width: 80%;
-                        height: 40em;
+                        height: auto;
                     }
                 }
             }
@@ -833,7 +833,7 @@
             }
             
             ////// second MAX screen ///@at-root
-            @media (min-width:900px) {
+            @media (min-width:1000px) {
                 .profile {
                     .profile-content1 {
                         p {
@@ -855,7 +855,7 @@
                 .nav-bar {
                     display: flex;
                     flex-wrap: wrap;
-                    justify-content: space-evenly;
+                    justify-content: space-between;
                     #content2 {
                         margin-top: -0.01em;
                         position: relative;
@@ -870,11 +870,14 @@
                                 border-style: solid;
                                 border-radius: 50%;
                                 width: 2em;
+                                margin-left: .1em;
+                                margin-right: 2em;
+                                margin-top: .5em;
                                 height: 2em;
                                 transition-duration: 200ms;
                                 &:hover {
-                                    width: 2.7em;
-                                    height: 2.7em;
+                                    width: 2.1em;
+                                    height: 2.4em;
                                 }
                             }
                         }
@@ -883,10 +886,12 @@
                 .acounts {
                     display: none;
                 }
-                .education {
-                    video {
-                        width: auto;
-                        height: 50vh;
+                #aboutme {
+                    .education {
+                        .self-intro {
+                            width: 55%;
+                            height: 35em;
+                        }
                     }
                 }
             }

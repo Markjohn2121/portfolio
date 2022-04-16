@@ -214,7 +214,7 @@ html {
 
 #aboutme .education .self-intro {
   width: 80%;
-  height: 40em;
+  height: auto;
 }
 
 #skill {
@@ -863,7 +863,7 @@ html {
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1000px) {
   .profile .profile-content1 p {
     font-size: 4em;
   }
@@ -884,9 +884,9 @@ html {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .nav-bar #content2 {
     margin-top: -0.01em;
@@ -903,20 +903,23 @@ html {
     border-style: solid;
     border-radius: 50%;
     width: 2em;
+    margin-left: .1em;
+    margin-right: 2em;
+    margin-top: .5em;
     height: 2em;
     -webkit-transition-duration: 200ms;
             transition-duration: 200ms;
   }
   .nav-bar #content2 li img:hover {
-    width: 2.7em;
-    height: 2.7em;
+    width: 2.1em;
+    height: 2.4em;
   }
   .acounts {
     display: none;
   }
-  .education video {
-    width: auto;
-    height: 50vh;
+  #aboutme .education .self-intro {
+    width: 55%;
+    height: 35em;
   }
 }
 
