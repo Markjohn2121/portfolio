@@ -5,13 +5,14 @@ const exitbtn = document.getElementById('exitbtn');
 if (window.innerWidth <= 575) {
     menubtn.addEventListener('click', () => {
         // navb.classList.toggle('active');
-        //  menubtn.style.display = "none";
+          menubtn.style.display = "none";
         navb.style.display = "block";
 
     });
     exitbtn.addEventListener('click', () => {
         //navb.classList.toggle('active');
         navb.style.display = "none";
+        menubtn.style.display = "block"
     });
 
     navb.addEventListener('mouseleave', () => {

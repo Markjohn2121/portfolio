@@ -57,6 +57,9 @@ html {
 .menu-container .nav-bar #menu-image {
   float: right;
   cursor: pointer;
+  margin-top: .5em;
+  margin-right: 1em;
+  
 }
 
 .menu-container .nav-bar .nav-content2 {
