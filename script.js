@@ -1,32 +1,50 @@
-function chh() {
-    alert("gsgs");
-}
+
 const menubtn = document.getElementById('menu-image');
 const navb = document.getElementById('menu-option');
 const exitbtn = document.getElementById('exitbtn');
+
+if(window.innerWidth <= 575){
 menubtn.addEventListener('click', () => {
-
-    //navb.classList.toggle('active');
+  // navb.classList.toggle('active');
   //  menubtn.style.display = "none";
-  navb.style.display = "block";
+navb.style.display = "block";
   
-
-})
+});
 exitbtn.addEventListener('click', () => {
-
-    navb.classList.toggle('active');
+    //navb.classList.toggle('active');
 navb.style.display = "none";
+});
 
-})
 document.body.addEventListener('pointermove' ,()=>{
-navb.style.display = "none";
-//navb.classList.toggle('active');
   
-})
+  if(window.innerWidth > 575){
+    
+   navb.style.display = "block";
+   
+    //navb.classList.toggle('active');
+  }else{
+   navb.style.display = "none";
+  }
 
+
+
+});
+
+
+}else if(window.innerWidth > 575){
+    navb.style.display = "block";
+  
+}
+
+
+window.onresize =()=>{
+  if(window.innerWidth > 575){
+    navb.style.display = "block";
+  }else{
+    navb.style.display = "none";
+  }
  
-
-
+}
 
 
 
