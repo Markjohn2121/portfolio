@@ -6,20 +6,25 @@ const navb = document.getElementById('menu-option');
 const exitbtn = document.getElementById('exitbtn');
 menubtn.addEventListener('click', () => {
 
-    navb.classList.toggle('active');
-
-
-
+    //navb.classList.toggle('active');
+  //  menubtn.style.display = "none";
+  navb.style.display = "block";
+  
 
 })
 exitbtn.addEventListener('click', () => {
 
     navb.classList.toggle('active');
-
-
+navb.style.display = "none";
 
 })
+document.body.addEventListener('pointermove' ,()=>{
+navb.style.display = "none";
+//navb.classList.toggle('active');
+  
+})
 
+ 
 
 
 
