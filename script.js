@@ -4,19 +4,21 @@ const exitbtn = document.getElementById('exitbtn');
 
 if (window.innerWidth <= 575) {
     menubtn.addEventListener('click', () => {
-        // navb.classList.toggle('active');
-          menubtn.style.display = "none";
-        navb.style.display = "block";
+       // navb.classList.toggle('active');
+       // menubtn.style.display = "none";
+       navb.style.display = "block";
+       // menubtn.style.opacity = "0";
 
     });
     exitbtn.addEventListener('click', () => {
-        //navb.classList.toggle('active');
+       // navb.classList.toggle('active');
         navb.style.display = "none";
-        menubtn.style.display = "block"
+       menubtn.style.display = "block"
     });
 
     navb.addEventListener('mouseleave', () => {
-
+  menubtn.style.opacity = "1";
+  menubtn.style.display = "block"
         if (window.innerWidth > 575) {
 
             navb.style.display = "block";
@@ -24,6 +26,7 @@ if (window.innerWidth <= 575) {
             //navb.classList.toggle('active');
         } else {
             navb.style.display = "none";
+              
         }
 
 
@@ -40,8 +43,10 @@ if (window.innerWidth <= 575) {
 window.onresize = () => {
     if (window.innerWidth > 575) {
         navb.style.display = "block";
-    } else {
+        menubtn.style.display = "none";
+    } else if(window.innerWidth <575) {
         navb.style.display = "none";
+         menubtn.style.display = "block";
     }
 
 }
