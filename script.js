@@ -8,6 +8,11 @@ if (window.innerWidth <= 575) {
        // menubtn.style.display = "none";
        navb.style.display = "block";
        // menubtn.style.opacity = "0";
+       
+     
+    
+     
+  
 
     });
     exitbtn.addEventListener('click', () => {
@@ -40,6 +45,7 @@ if (window.innerWidth <= 575) {
 }
 
 
+
 window.onresize = () => {
     if (window.innerWidth > 575) {
         navb.style.display = "block";
@@ -50,6 +56,45 @@ window.onresize = () => {
     }
 
 }
+
+//PAUSE ANY VIDEO WHEN WINDOW IS MINIMIZE OR CHANGE TAB
+
+//Simple javascript event:
+
+window.onblur = function() { document.getElementById('project5 ').pause(); };
+window.onblur = function() { document.getElementById('self-intro').pause(); };
+
+
+
+
+
+
+/**
+let video = document.getElementById('self-intro');
+
+ function playVideoOnScroll () {
+    const threshold = -110 //px above the video to start playing
+    let offsettop = video.getBoundingClientRect().top
+      let offsetbottom = video.getBoundingClientRect().bottom
+    if (offsettop < threshold || offsetbottom > 1000) {
+      console.log(offsettop)
+      video.pause()
+    } else {
+     // video.play()
+    }
+  }
+
+  window.addEventListener('scroll', playVideoOnScroll, false)
+  window.addEventListener('resize', playVideoOnScroll, false)   
+**/
+let self_intro = document.querySelector('#self-intro');
+let project5 = document.querySelector('#project5');
+window.onscroll =()=>{
+  self_intro.pause();
+  project5.pause();
+}
+
+
 
 
 
