@@ -1,3 +1,18 @@
+
+
+// MESSAGE FORM - Subject names
+function formSubmit(name){
+  
+var subject = document.getElementById('subject').value = "New Message from " + name;
+  alert(subject)
+}
+
+
+
+
+
+
+
 const menubtn = document.getElementById('menu-image');
 const navb = document.getElementById('menu-option');
 const exitbtn = document.getElementById('exitbtn');

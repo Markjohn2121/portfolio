@@ -325,14 +325,12 @@
         <div class="message" id="contact1">
 
 
-            <form action="https://formsubmit.co/markvaldez2121@gmail.com" method="post">
+            <form action="https://formsubmit.co/markvaldez2121@gmail.com" method="post" >
                 <h2>Contact me</h2>
 
-                <input type="hidden" name="_subject" value="New message from portfolio">
                 <input type="hidden" name="_template" value="box">
                 <input type="text" name="_honey" style="display:none">
                 <input type="hidden" name="_captcha" value="false">
-
 
 
                 <label for="name">Name</label>
@@ -343,7 +341,11 @@
 
                 <label for="message">message</label>
                 <textarea name="message" id="mail" cols="21" rows="5"></textarea><br>
-                <a href="#contact1"> <input id="send" type="submit" value="Send"></a>
+                
+                
+                <input type="hidden" name="_subject" id="subject" value="New message">
+                
+                <a href="#contact1"> <input id="send" type="submit" value="Send" onclick="formSubmit(document.getElementById('name').value)"></a>
 
             </form>
 
