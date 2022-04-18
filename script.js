@@ -1,10 +1,8 @@
-
-
 // MESSAGE FORM - Subject names
-function formSubmit(name){
-  
-var subject = document.getElementById('subject').value = "New Message from " + name;
-  
+function formSubmit(name) {
+
+    var subject = document.getElementById('subject').value = "New Message from " + name;
+
 }
 
 
@@ -17,28 +15,27 @@ const menubtn = document.getElementById('menu-image');
 const navb = document.getElementById('menu-option');
 const exitbtn = document.getElementById('exitbtn');
 
-if (window.innerWidth <= 575) {
-    menubtn.addEventListener('click', () => {
-       // navb.classList.toggle('active');
-       // menubtn.style.display = "none";
-       navb.style.display = "block";
-       // menubtn.style.opacity = "0";
-       
-     
-    
-     
-  
 
-    });
-    exitbtn.addEventListener('click', () => {
-       // navb.classList.toggle('active');
-        navb.style.display = "none";
-       menubtn.style.display = "block"
-    });
-if(window.innerWidth <=575){
-    navb.addEventListener('mouseleave', () => {
-  menubtn.style.opacity = "1";
-  menubtn.style.display = "block"
+menubtn.addEventListener('click', () => {
+    // navb.classList.toggle('active');
+    // menubtn.style.display = "none";
+    navb.style.display = "block";
+    // menubtn.style.opacity = "0";
+
+
+});
+
+exitbtn.addEventListener('click', () => {
+    // navb.classList.toggle('active');
+    navb.style.display = "none";
+    menubtn.style.display = "block"
+});
+
+navb.addEventListener('mouseleave', () => {
+    if (window.innerWidth <= 575) {
+        menubtn.style.opacity = "1";
+        menubtn.style.display = "block"
+
         if (window.innerWidth > 575) {
 
             navb.style.display = "block";
@@ -46,19 +43,16 @@ if(window.innerWidth <=575){
             //navb.classList.toggle('active');
         } else {
             navb.style.display = "none";
-              
+
         }
 
+    }
+
+});
 
 
-    });
-}
 
 
-} else if (window.innerWidth > 575) {
-    navb.style.display = "block";
-
-}
 
 
 
@@ -66,9 +60,9 @@ window.onresize = () => {
     if (window.innerWidth > 575) {
         navb.style.display = "block";
         menubtn.style.display = "none";
-    } else if(window.innerWidth <575) {
+    } else if (window.innerWidth < 575) {
         navb.style.display = "none";
-         menubtn.style.display = "block";
+        menubtn.style.display = "block";
     }
 
 }
@@ -105,9 +99,9 @@ let video = document.getElementById('self-intro');
 **/
 let self_intro = document.querySelector('#self-intro');
 let project5 = document.querySelector('#project5');
-window.onscroll =()=>{
-  self_intro.pause();
-  project5.pause();
+window.onscroll = () => {
+    self_intro.pause();
+    project5.pause();
 }
 
 
