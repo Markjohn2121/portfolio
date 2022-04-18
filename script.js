@@ -35,7 +35,7 @@ if (window.innerWidth <= 575) {
         navb.style.display = "none";
        menubtn.style.display = "block"
     });
-
+if(window.innerWidth <=575){
     navb.addEventListener('mouseleave', () => {
   menubtn.style.opacity = "1";
   menubtn.style.display = "block"
@@ -52,6 +52,7 @@ if (window.innerWidth <= 575) {
 
 
     });
+}
 
 
 } else if (window.innerWidth > 575) {
