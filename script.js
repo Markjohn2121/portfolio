@@ -1,3 +1,12 @@
+
+function sections(sections){
+
+var view =  document.getElementById(sections);
+window.scrollTo(0,view.offsetTop );
+
+
+}
+
 // MESSAGE FORM - Subject names
 function formSubmit(name) {
 
