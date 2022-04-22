@@ -1,8 +1,8 @@
+// Scroll to evry sections
+function sections(sections) {
 
-function sections(sections){
-
-var view =  document.getElementById(sections);
-window.scrollTo(0,view.offsetTop );
+    var view = document.getElementById(sections);
+    window.scrollTo(0, view.offsetTop);
 
 
 }

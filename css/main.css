@@ -8,6 +8,11 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+h1 {
+  color: blue;
+  font-weight: 900;
+}
+
 p {
   color: black;
   font-weight: 300;
@@ -16,7 +21,9 @@ p {
 }
 
 #main-logo {
-  letter-spacing: .2em;
+  letter-spacing: .4em;
+  margin-top: .4em;
+  margin-left: .2em;
 }
 
 html {
@@ -42,7 +49,6 @@ html {
           justify-content: space-between;
   height: 3em;
   width: 100%;
-  border:2px solid;
 }
 
 .menu-container .logo {
@@ -60,7 +66,6 @@ html {
   cursor: pointer;
   margin-top: .5em;
   margin-right: 1em;
-  
 }
 
 .menu-container .nav-bar .nav-content2 {
@@ -145,9 +150,10 @@ html {
 
 .profile .profile-content2 {
   width: auto;
-  background-color: rgba(0, 0, 0, 0);
   padding-bottom: 1em;
   background-color: rgba(0, 0, 255, 0.37);
+  background-image: linear-gradient(60deg, #1c4ef0, #620bb3, blue);
+  background-image: -o-linear-gradient(60deg, #1c4ef0, #620bb3, blue);
   margin-left: auto;
   margin-right: auto;
   border-radius: 20em;
@@ -207,6 +213,8 @@ html {
   text-align: center;
   padding-top: .5em;
   background-color: rgba(128, 128, 128, 0.596);
+  background-image: linear-gradient(60deg, #1c4ef0, #620bb3, blue);
+  background-image: -o-linear-gradient(60deg, #1c4ef0, #620bb3, blue);
   margin-bottom: 2em;
 }
 
@@ -219,6 +227,7 @@ html {
 #aboutme .education .self-intro {
   width: 80%;
   height: auto;
+  margin-bottom: 2em;
 }
 
 #skill {
@@ -252,6 +261,11 @@ html {
 #skill .skill-content1 .main-content .skill-set li {
   margin-right: 2em;
   list-style: circle;
+  font-size: 1.5em;
+}
+
+#skill .skill-content1 .main-content .skill-set li p {
+  font-size: 2em;
 }
 
 #skill .skill-basic-knowledge {
@@ -260,6 +274,8 @@ html {
   padding-top: 1em;
   text-align: center;
   background-color: rgba(177, 173, 173, 0.397);
+  background-image: linear-gradient(30deg, rgba(28, 78, 240, 0.705), rgba(98, 11, 179, 0.678), rgba(0, 0, 255, 0.651));
+  background-image: -o-linear-gradient(30deg, rgba(28, 78, 240, 0.705), rgba(98, 11, 179, 0.678), rgba(0, 0, 255, 0.651));
 }
 
 #skill .skill-basic-knowledge ul {
@@ -282,7 +298,7 @@ html {
 #skill .skill-basic-knowledge ul li {
   width: 20em;
   list-style: none;
-  background-color: rgba(0, 0, 0, 0.096);
+  background-color: rgba(46, 45, 45, 0.089);
   margin-bottom: 2em;
   margin-left: 1em;
   margin-right: 1em;
@@ -293,7 +309,6 @@ html {
 #skill .skill-basic-knowledge ul li p {
   margin-left: 1em;
   margin-right: 1em;
-  font-family: 1em;
   -ms-user-select: none;
       user-select: none;
   -moz-user-select: none;
@@ -301,9 +316,13 @@ html {
 }
 
 #projects {
+  border-bottom-right-radius: 3em;
+  border-bottom-left-radius: 3em;
   margin-bottom: 10em;
   position: relative;
   background-color: rgba(177, 173, 173, 0.397);
+  background-image: linear-gradient(60deg, #1c4ef0, #620bb3, blue);
+  background-image: -o-linear-gradient(60deg, #1c4ef0, #620bb3, blue);
 }
 
 #projects .myprojects {
@@ -438,28 +457,25 @@ html {
   padding-right: 3em;
   padding-bottom: 2em;
   background-color: rgba(0, 255, 255, 0.185);
- 
-  
-    border:2px solid ;
   border-radius: 2em;
-
+  border: 1px solid;
 }
 
 #contact .message input {
-  width: 13em;
+  width: 10em;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  border: 1px solid;
-   border-radius: 2em;
+  border: 2px solid;
+  border-radius: 2em;
 }
 
 #contact .message textarea {
   display: block;
-  width: 13em;
+  width: 11em;
   resize: none;
-    border: 1px solid;
-    border-radius: .4em;
+  border: 1px solid;
+  border-radius: .4em;
 }
 
 #contact .message label {
@@ -472,8 +488,7 @@ html {
   height: 2em;
   border-style: hidden;
   border-radius: 1em;
-    border: 1px solid;
-   
+  border: 1px solid;
 }
 
 #contact .message .contact-me {
@@ -526,6 +541,9 @@ html {
     width: 90%;
     height: 29em;
   }
+  .profile .profile-content2 p {
+    color: #1818fc;
+  }
   #menu-option {
     display: block;
   }
@@ -555,8 +573,14 @@ html {
   .nav-bar #menu-option li a {
     color: black;
     font-size: 1em;
+    text-decoration: none;
+    -ms-user-select: none;
+        user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
     -webkit-transition-duration: 100ms;
             transition-duration: 100ms;
+    cursor: pointer;
   }
   .nav-bar #menu-option li a:hover {
     font-size: 1.1em;
@@ -567,6 +591,7 @@ html {
     border-style: hidden;
     border-radius: 1em;
     background-color: blue;
+    cursor: pointer;
   }
   .nav-bar #menu-option .home a {
     color: white;
@@ -668,6 +693,12 @@ html {
   }
   #menu-option a {
     color: white;
+    text-decoration: none;
+    -ms-user-select: none;
+        user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    cursor: pointer;
     font-size: 1em;
     -webkit-transition: all 100ms ease-in-out 100ms;
     transition: all 100ms ease-in-out 100ms;
@@ -688,6 +719,7 @@ html {
     border-style: hidden;
     border-radius: 1em;
     background-color: blue;
+    cursor: pointer;
   }
   #menu-option .home a {
     color: white;
