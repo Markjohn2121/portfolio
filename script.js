@@ -209,7 +209,7 @@ function send() {
 document.addEventListener('scroll', () => {
 
     if (window.pageYOffset > 0) {
-        $(".menu-container").css("background-color", "rgba(150, 150, 150, 0");
+        $(".menu-container").css("background-color", "rgba(230, 230, 230, .78");
     } else {
         $(".menu-container").css("background-color", "white");
 

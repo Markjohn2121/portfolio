@@ -14,7 +14,7 @@
             }
             
             p {
-                font-size: 1.3em;
+              font-size: .6em;
                 color: black;
                 font-weight: 300;
                 font-feature-settings: "abvf";
@@ -200,7 +200,6 @@
                 // background: yellow;
                 margin-top: 2em;
                 .aboutme-content1 {
-                    display: flex;
                     position: relative;
                     margin-top: 1em;
                     padding-top: 2em;
@@ -218,7 +217,7 @@
                         transform: translate(-50%, -50%);
                     }
                     p {
-                        font-size: 1.3em;
+                      font-size: .6em;
                         user-select: none;
                         -moz-user-select: none;
                         -webkit-user-select: none;
@@ -240,19 +239,19 @@
                     p {
                         margin-left: 20%;
                         margin-right: 20%;
-                        padding-bottom: 1rem;
+                        padding-bottom: 1em;
                     }
                     .self-intro {
                         width: 80%;
                         height: auto;
-                        margin-bottom: 4em;
+                        margin-bottom: 2em;
                     }
                 }
             }
             
             // SKILL COLOR.
             #skill {
-                margin-bottom: 3rem;
+                margin-bottom: 3em;
                 position: relative;
                 .skill-content1 {
                     text-align: center;
@@ -270,7 +269,7 @@
                                 margin-right: 2em;
                                 list-style: circle;
                                 // list-style: inside;
-                                font-size: 1.3em;
+                                font-size: 1.5em;
                                 p {
                                     font-size: 2em;
                                 }
@@ -386,7 +385,7 @@
                             }
                             text-decoration: none;
                             p {
-                                font-size: 1.3em;
+                              font-size: .8em
                                 margin-bottom: 2em;
                                 text-align: center;
                                 text-decoration: overline;
@@ -499,7 +498,7 @@
                             height: 29em;
                         }
                         p {
-                            color: black;
+                            color: rgb(24, 24, 252);
                         }
                     }
                 }
@@ -734,18 +733,6 @@
                     }
                     .swiper-pagination {
                         color: white;
-                    }
-                }
-                p {
-                    font-size: 1em;
-                }
-                #aboutme {
-                    .aboutme-content1 {
-                        .main-content {
-                            p {
-                                font-size: .8em;
-                            }
-                        }
                     }
                 }
             }
