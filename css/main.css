@@ -203,7 +203,6 @@ html {
 }
 
 #aboutme .aboutme-content1 p {
-  color: black;
   font-size: .6em;
   -ms-user-select: none;
       user-select: none;
@@ -546,7 +545,7 @@ html {
     height: 29em;
   }
   .profile .profile-content2 p {
-    color: black;
+    color: #1818fc;
   }
   #menu-option {
     display: block;
