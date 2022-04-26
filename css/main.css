@@ -14,7 +14,7 @@ h1 {
 }
 
 p {
-  font-size: .6em;
+  font-size: 1.3em;
   color: black;
   font-weight: 300;
   -webkit-font-feature-settings: "abvf";
@@ -203,7 +203,7 @@ html {
 }
 
 #aboutme .aboutme-content1 p {
-  font-size: .6em;
+  font-size: 1.3em;
   -ms-user-select: none;
       user-select: none;
   -moz-user-select: none;
@@ -263,7 +263,7 @@ html {
 #skill .skill-content1 .main-content .skill-set li {
   margin-right: 2em;
   list-style: circle;
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 
 #skill .skill-content1 .main-content .skill-set li p {
@@ -406,7 +406,7 @@ html {
 }
 
 .swiper .swiper-wrapper .swiper-slide a p {
-  font-size: .8em;
+  font-size: 1.3em;
   margin-bottom: 2em;
   text-align: center;
   text-decoration: overline;
@@ -768,6 +768,12 @@ html {
   }
   .swiper .swiper-pagination {
     color: white;
+  }
+  p {
+    font-size: 1em;
+  }
+  #aboutme .aboutme-content1 .main-content p {
+    font-size: .8em;
   }
 }
 
