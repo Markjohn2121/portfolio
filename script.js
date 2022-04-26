@@ -201,3 +201,18 @@ function send() {
     alert("sent");
 
 }
+
+
+// change nav color
+
+
+document.addEventListener('scroll', () => {
+
+    if (window.pageYOffset > 0) {
+        $(".menu-container").css("background-color", "rgba(150, 150, 150, 0");
+    } else {
+        $(".menu-container").css("background-color", "white");
+
+
+    }
+})
