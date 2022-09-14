@@ -207,10 +207,7 @@ html {
 
 #aboutme .aboutme-content1 p {
   font-size: 1.3em;
-  -ms-user-select: none;
-      user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
+
 }
 
 #aboutme .education {
